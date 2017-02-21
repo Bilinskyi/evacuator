@@ -10,6 +10,18 @@ $(document).ready(function(){
 // 		moveSlides: 1
 // 	});
 
+if ($('.product').length) {
+  $('.product').slick({
+      dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  adaptiveHeight: true
+  });
+}
+
+$('.advantages__item').matchHeight();
+
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
@@ -39,11 +51,7 @@ $('.owl-carousel').owlCarousel({
 });
 
 
-center: true,
-// activeClass: 'qqq',
-touchDrag: false,
-mouseDrag: false,
-responsiveClass:true,
+
 
  //    $("a.modal-form").fancybox({
  //       'hideOnContentClick': true,
