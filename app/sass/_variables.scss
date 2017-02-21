@@ -1,0 +1,32 @@
+$normal: 14px;
+
+
+
+// media
+// $break-xsmall: 479px;
+// $break-small: 767px;
+// $break-large: 1199px;
+// $break-large: 1199px;
+
+$bp-xx-large:   "only screen and (min-width : 1670px)";
+$bp-x-large:    "only screen and (min-width : 1201px)";
+$min-s:    "only screen and (min-width : 768px)";
+
+$bp-blarge:      "only screen and (max-width : 1669px)";
+$bp-large:      "only screen and (max-width : 1339px)";
+$bp-medium:     "only screen and (max-width : 999px)";
+$bp-small:      "only screen and (max-width : 767px)";
+$bp-xsmall:    "only screen and (max-width : 479px)";
+
+
+// ul {
+	// @media #{$bp-small} {
+	// 	width: 100%;
+	// }
+// }
+
+// ul {  
+//   @include respond-to(desktope) {
+//     width: 400%;
+//   }
+// }
