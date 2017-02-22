@@ -1,1 +1,35 @@
-<svg id="SvgjsSvg1045" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="267" height="224"><defs id="SvgjsDefs1046"><clipPath id="SvgjsClipPath1049"><path id="SvgjsPath1048" d="M1122 655C1122 593.14411 1171.92025 543 1233.5 543C1295.07975 543 1345 593.14411 1345 655C1345 716.85589 1295.07975 767 1233.5 767C1171.92025 767 1122 716.85589 1122 655Z " fill="#ffffff"></path></clipPath></defs><path id="SvgjsPath1047" d="M1122 655C1122 593.14411 1171.92025 543 1233.5 543C1295.07975 543 1345 593.14411 1345 655C1345 716.85589 1295.07975 767 1233.5 767C1171.92025 767 1122 716.85589 1122 655Z " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="#221f20" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#SvgjsClipPath1049&quot;)" transform="matrix(1,0,0,1,-1122,-543)"></path><path id="SvgjsPath1050" d="M1384.69133 611.6716L1388.3298900000002 631.28152L1369.6765400000002 623.62271Z " fill="#fec017" fill-opacity="1" transform="matrix(1,0,0,1,-1122,-543)"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="189px" height="65px" viewBox="0 0 189 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 31</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2.13162821e-13" y="2.55795385e-13" width="131.684802" height="142.356506"></rect>
+        <ellipse id="path-3" cx="10.4256013" cy="123.85154" rx="111.425601" ry="111.85154"></ellipse>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="222.851203" height="223.70308" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1920" transform="translate(-1200.000000, -573.000000)">
+            <g id="Group-27" transform="translate(-3.000000, -29.000000)">
+                <g id="Group-18" transform="translate(1295.500000, 631.500000) scale(1, -1) translate(-1295.500000, -631.500000) translate(1195.000000, 534.000000)">
+                    <g id="Group-31">
+                        <g id="Group-17" opacity="0.5" transform="translate(97.242641, 97.455411) rotate(-45.000000) translate(-97.242641, -97.455411) translate(31.242641, 25.955411)">
+                            <g id="Oval-3" transform="translate(0.000000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#FFFFFF" opacity="0" style="mix-blend-mode: multiply;" xlink:href="#path-1"></use>
+                                <g mask="url(#mask-2)" stroke-width="2" stroke="#221F20" stroke-dasharray="3">
+                                    <use mask="url(#mask-4)" xlink:href="#path-3"></use>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="Path" fill="#FEC017" transform="translate(188.988630, 114.875273) rotate(-75.000000) translate(-188.988630, -114.875273) " points="197.98863 116.289425 179.98863 124.875273 182.561203 104.875273"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
