@@ -8,6 +8,31 @@ $(document).ready(function(){
 
   $("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+  var fl = true;
+  var fl2 = true;
+  $(window).on('load resize', function() {
+
+    borderH();
+
+    if (window.innerWidth < 768) { 
+
+      if (fl) {
+        fl = false;
+        fl2 = true;
+        $('.footer').find('.contacts').after($('.linkbar'));
+      }
+
+    }
+    //  else {
+    //   if (fl2) {
+    //     fl2 = false;
+    //     fl1 = true;
+    //     $('.footer').find('.contacts').before($('.linkbar'));
+    //   }
+    // }
+
+  });
+
   $(window).on('load', function() {
     $('.section-slider-image .slick-prev, .section-slider-image .slick-next').prepend('<div class="semi-circle"></div>');
   });
@@ -36,7 +61,24 @@ $(document).ready(function(){
           slidesToScroll: 1,
           infinite: true
         }
-      }]
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      }
+      ]
     });
   }
 
@@ -59,7 +101,7 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 5,
       adaptiveHeight: true,
-           responsive: [
+      responsive: [
       {
         breakpoint: 1000,
         settings: {
@@ -67,7 +109,24 @@ $(document).ready(function(){
           slidesToScroll: 1,
           infinite: true
         }
-      }]
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      }
+      ]
     })
 
   }
@@ -81,13 +140,13 @@ $(document).ready(function(){
   })
 
 
- //    $("a.modal-form").fancybox({
- //       'hideOnContentClick': true,
- //          minWidth : 230,
- //          padding : 0,
- //          closeBtn : true
+    $(".modal-form").fancybox({
+       'hideOnContentClick': true,
+          minWidth : 230,
+          padding : 0,
+          closeBtn : true
  
- // });
+ });
 
 // $('header a[href^="#"]').on('click', function(event) {
 

@@ -62,7 +62,8 @@ gulp.task('sass', function () {
 	return gulp.src('app/sass/**/*.scss')
 	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 	.pipe(autoprefixer(['last 15 versions'], { cascade: true }))
-	// .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(gcmq())
+	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(gulp.dest('app/css/'))
 	.pipe(browserSync.reload({
 		stream: true
@@ -77,14 +78,26 @@ gulp.task('sass', function () {
 // });
 
 gulp.task('scripts', function() {
-	return gulp.src([ 
-		'app/js/**/*.js',
-		'!app/js/**/main.js' 
-		])
-	.pipe(concat('libs.min.js')) 
-	.pipe(jsmin()) 
-	.pipe(gulp.dest('dist/js')); 
+  return gulp.src([ 
+    'app/js/**/*.js',
+    '!app/js/**/main.js',
+    '!app/js/**/main.min.js',
+    '!app/js/**/libs.min.js' 
+    ])
+  .pipe(concat('libs.min.js')) 
+  .pipe(jsmin()) 
+  .pipe(gulp.dest('app/js')); 
 });
+
+gulp.task('main', function() {
+  return gulp.src([ 
+    'app/js/main.js'
+    ])
+  .pipe(concat('main.min.js')) 
+  .pipe(jsmin()) 
+  .pipe(gulp.dest('app/js')); 
+});
+
 
 
 // gulp.task('clean', function() {

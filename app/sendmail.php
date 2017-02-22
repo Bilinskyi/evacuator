@@ -30,18 +30,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   
   
   $to  = "1unitedcrew@gmail.com";  
-
-  if (isset($problem)) {
-    $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone";
-  } else if (isset($popup)) {
-    $message = "Телефон: $phone";
-  } else if (isset($email)) {
-    $message = "Email: $email";
-  } else if (isset($prod)) {
-    $message = "Телефон: $phone<br>$prod";
-  } else {
-    $message = "Телефон: $phone";
-  }
+  $message = "Телефон: $phone";
+  // if (isset($problem)) {
+  //   $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone";
+  // } else if (isset($popup)) {
+  //   $message = "Телефон: $phone";
+  // } else if (isset($email)) {
+  //   $message = "Email: $email";
+  // } else if (isset($prod)) {
+  //   $message = "Телефон: $phone<br>$prod";
+  // } else {
+  //   $message = "Телефон: $phone";
+  // }
 
   $subject = "Заявка с сайта"; 
 

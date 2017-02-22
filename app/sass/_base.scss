@@ -32,7 +32,8 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-.inline-center{text-align: center;}
+.center{text-align: center !important;}
+
 .left-t{text-align: left;}
 .right-t{text-align: right;}
 .right{float: right!important;}
