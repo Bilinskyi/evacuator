@@ -16,6 +16,10 @@
 }
 
 
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -35,6 +39,7 @@ body {
   color: #2d2d2d;
   font-family: $ps;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 ul {

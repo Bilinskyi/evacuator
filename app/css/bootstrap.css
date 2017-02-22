@@ -94,8 +94,8 @@ hr {
 @media (min-width: 1340px) {
   .container {
     width: 1310px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 @media (min-width: 1670px) {
