@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 
+  $('.evacuator__head').matchHeight({
+    byRow: false
+  })
+
   $("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
   $(window).on('load', function() {

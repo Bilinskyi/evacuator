@@ -196,17 +196,35 @@ $slick-opacity-not-active: 0.25 !default;
 
 
 .section-slider-image .slick-prev {
+    @media #{$bp-blarge} {
+          left: -22px !important;
+    }
+    @media #{$bp-large} {
+          left: -16px !important;
+    }
     &:after {
        content: '\e900'; 
        color: #fff !important;
        opacity: 1 !important;
+       @media #{$bp-large} {
+             font-size: 14px !important;
+       }
     }
 }
 .section-slider-image .slick-next {
+    @media #{$bp-blarge} {
+          right: -22px !important;
+    }
+    @media #{$bp-large} {
+          right: -16px !important;
+    }
     &:after {
        content: '\e901'; 
        color: #fff !important;
        opacity: 1 !important;
+       @media #{$bp-large} {
+             font-size: 14px !important;
+       }
     }
 }
 

@@ -3,6 +3,14 @@
 :-moz-placeholder {color: rgba(#404042, .4);font-size: 16px;font-family: $ps;font-weight: 400;}
 :-ms-input-placeholder {color: rgba(#404042, .4);font-size: 16px;font-family: $ps;font-weight: 400;}
 
+@media #{$bp-large} {
+      ::-webkit-input-placeholder {font-size: 12px;}
+::-moz-placeholder {font-size: 12px;}
+:-moz-placeholder {font-size: 12px;}
+:-ms-input-placeholder {font-size: 12px;}
+
+}
+
 .form__input_stl_2::-webkit-input-placeholder {font-size: 13px;color: #404042;}
 .form__input_stl_2::-moz-placeholder {font-size: 13px;color: #404042;}
 .form__input_stl_2:-moz-placeholder {font-size: 13px;color: #404042;}
