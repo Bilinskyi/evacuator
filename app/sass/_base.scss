@@ -3,6 +3,19 @@
 :-moz-placeholder {color: rgba(#404042, .4);font-size: 16px;font-family: $ps;font-weight: 400;}
 :-ms-input-placeholder {color: rgba(#404042, .4);font-size: 16px;font-family: $ps;font-weight: 400;}
 
+.form__input_stl_2::-webkit-input-placeholder {font-size: 13px;color: #404042;}
+.form__input_stl_2::-moz-placeholder {font-size: 13px;color: #404042;}
+.form__input_stl_2:-moz-placeholder {font-size: 13px;color: #404042;}
+.form__input_stl_2:-ms-input-placeholder {font-size: 13px;color: #404042;}
+
+.db {
+  display: block !important;
+}
+.pt0 {
+  padding-top: 0 !important;
+}
+
+
 
 *, *:before, *:after {
   box-sizing: border-box;
