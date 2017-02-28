@@ -7,16 +7,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
    
 
-  $popup = $_POST["popup"];
-  $diagn = $_POST["diagn"];
-  $prod = $_POST["prod"];
+
   
-  $problem = $_POST["problem"];
-  $model = $_POST["model"];
-  $mark = $_POST["mark"];
-  $sel = $_POST["sel"];
+
+  $hideinput = $_POST["hideinput"];
   $phone = $_POST["phone"];
-  $email = $_POST["email"];
+
 
   // $utm_source = $_POST["utm_source"];
   // $utm_medium = $_POST["utm_medium"];
@@ -31,17 +27,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   
   $to  = "1unitedcrew@gmail.com";  
   $message = "Телефон: $phone";
-  // if (isset($problem)) {
-  //   $message = "Выбор: $problem<br>Модель: $model<br>Марка: $mark<br>Год: $sel<br>Телефон: $phone";
-  // } else if (isset($popup)) {
-  //   $message = "Телефон: $phone";
-  // } else if (isset($email)) {
-  //   $message = "Email: $email";
-  // } else if (isset($prod)) {
-  //   $message = "Телефон: $phone<br>$prod";
-  // } else {
-  //   $message = "Телефон: $phone";
-  // }
+  if (!empty($hideinput)) {
+    $message = "Телефон: $phone<br>$hideinput";
+  } 
 
   $subject = "Заявка с сайта"; 
 

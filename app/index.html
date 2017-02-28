@@ -100,32 +100,32 @@
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<div class="evacuator">
 							<div class="circle">
-								<div class="circle__img"></div>
+								<div class="circle__img"><img src="img/1.jpg" alt="" width="406" height="278"></div>
 							</div>
 							<div class="evacuator__head">С крано-манипуляторной установкой</div>
 							<div class="evacuator__text">
 								Извлечение и эвакуация автомобилей, находящихся в кювете, эвакуация сильно повреждённого авто, заблокированные замки, неисправное рулевое управление, заблокированная коробка передач
 							</div>
-							<a href="#" class="button button_fz_10 button_width_s button_size_m">Вызвать эвакутор с КМУ</a>
+							<a href="#call" data-txt="Оставьте свой номер и мы вам перезвоним 1" class="modal-form btn-form-js button button_fz_10 button_width_s button_size_m">Вызвать эвакутор с КМУ</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<div class="evacuator evacuator_border">
 							<div class="circle">
-								<div class="circle__img"></div>
+								<div class="circle__img"><img src="img/2.jpg" alt="" width="406" height="278"></div>
 							</div>
 							<div class="evacuator__head evacuator__head_size_lg">Со сдвижной платформой</div>
 							<div class="evacuator__text">
 								Эвакуация автомобиля с заблокированными колёсами, эвакуация автомобиля с небольшим дорожным просветом, разгрузка машин с фур и автовозов, разгрузка машин на эстакаду
 							</div>
 							<div class="price">от 1200 рублей</div>
-							<a href="#" class="button button_width_m button_size_m">Вызвать эвакуатор с платформой</a>
+							<a href="#call" data-txt="Оставьте свой номер и мы вам перезвоним 2" class="modal-form btn-form-js button button_width_m button_size_m">Вызвать эвакуатор с платформой</a>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<div class="evacuator">
 							<div class="circle">
-								<div class="circle__img"></div>
+								<div class="circle__img"><img src="img/3.jpg" alt="" width="406" height="278"></div>
 							</div>
 							<div class="evacuator__head">С удлиненной базой</div>
 							<div class="evacuator__text">
@@ -133,7 +133,7 @@
 								с длинной базой, которые не помещаются
 								на стандартные платформы  
 							</div>
-							<a href="#" class="button button_fz_10 button_width_s button_size_m">Вызвать эвакуатор с длинной базой</a>
+							<a href="#call" data-txt="Оставьте свой номер и мы вам перезвоним 3" class="modal-form btn-form-js button button_fz_10 button_width_s button_size_m">Вызвать эвакуатор с длинной базой</a>
 						</div>
 					</div>
 				</div>
@@ -151,11 +151,11 @@
 				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
 					<div class="tabs clearfix">
 						<ul class="tabs-caption mh1">
-							<li class="tabs-caption__item">Зарядка АКБ</li>
-							<li class="tabs-caption__item">Подвоз топлива </li>
-							<li class="tabs-caption__item tabs-caption__item_active">Замена колеса</li>
-							<li class="tabs-caption__item">Запуск двигателя</li>
-							<li class="tabs-caption__item">Вскрытие автомобиля</li>
+							<li class="tabs-caption__item js-val-fm">Зарядка АКБ</li>
+							<li class="tabs-caption__item js-val-fm">Подвоз топлива </li>
+							<li class="tabs-caption__item js-val-fm tabs-caption__item_active">Замена колеса</li>
+							<li class="tabs-caption__item js-val-fm">Запуск двигателя</li>
+							<li class="tabs-caption__item js-val-fm">Вскрытие автомобиля</li>
 						</ul>
 						<div class="tabs-content mh1">
 							<div class="form-wrapp form-wrapp_auto">
@@ -169,6 +169,7 @@
 								<div class="form-wrapp__note-1">Менеджер позвонит вам через 2 минуты, <br>для уточнения местоположения и пожеланий</div>
 								<form class="form" method="post" id="feedback-valid-2" action="sendmail.php">
 									<input class="form__input form__input_stl_2" type="tel" name="phone" placeholder="Введите ваш номер*"> 
+									<input type="hidden" name="hideinput" class="val-from-tabs" value="Замена колеса">
 									<button class="button button_size_m mt20" type="submit">Отправить заявку</button>
 								</form>
 								<div class="form-wrapp__note mb0 left-t db">*Подача эвакуатора от 18 минут</div>	
@@ -229,24 +230,24 @@
 			<h3>Предоставляем услуги для организаций:</h3>
 			<div class="services-slider">
 				<div class="services-slider__item">
-					<div><a href="#" target="_blank" class="services-slider__img-wrapp"><img class="greyscale" src="img/img-1.png" alt="" width="95" height="108"></a></div>
-					<a href="#" target="_blank" class="services-slider__text">Архангельская<br>таможня</a>
+					<div><div class="services-slider__img-wrapp"><img class="greyscale" src="img/img-1.png" alt="" width="95" height="108"></div></div>
+					<div class="services-slider__text">Архангельская<br>таможня</div>
 				</div>
 				<div class="services-slider__item">
-					<div><a href="#" target="_blank" class="services-slider__img-wrapp"><img class="greyscale" src="img/img-2.png" alt="" width="87" height="103"></a></div>
-					<a href="#" target="_blank" class="services-slider__text">Админстрация<span>Архангельской<br>области</span></a>
+					<div><div class="services-slider__img-wrapp"><img class="greyscale" src="img/img-2.png" alt="" width="87" height="103"></div></div>
+					<div class="services-slider__text">Админстрация<span>Архангельской<br>области</span></div>
 				</div>
 				<div class="services-slider__item">
-					<div><a href="#" target="_blank" class="services-slider__img-wrapp"><img class="greyscale" src="img/img-3.png" alt="" width="211" height="93"></a></div>
-					<a href="#" target="_blank" class="services-slider__text">Страховая компания<br>РОСГОССТРАХ</a>
+					<div><div class="services-slider__img-wrapp"><img class="greyscale" src="img/img-3.png" alt="" width="211" height="93"></div></div>
+					<div class="services-slider__text">Страховая компания<br>РОСГОССТРАХ</div>
 				</div>
 				<div class="services-slider__item">
-					<div><a href="#" target="_blank" class="services-slider__img-wrapp"><img class="greyscale" src="img/img-4.png" alt="" width="142" height="142"></a></div>
-					<a href="#" target="_blank" class="services-slider__text">Федеральная<br>налоговая служба<span>г. Архангельск</span></a>
+					<div><div class="services-slider__img-wrapp"><img class="greyscale" src="img/img-4.png" alt="" width="142" height="142"></div></div>
+					<div class="services-slider__text">Федеральная<br>налоговая служба<span>г. Архангельск</span></div>
 				</div>
 				<div class="services-slider__item">
-					<div><a href="#" target="_blank" class="services-slider__img-wrapp"><img class="greyscale" src="img/img-5.png" alt="" width="132" height="92"></a></div>
-					<a href="#" target="_blank" class="services-slider__text">СБЕРБАНК<br>России</a>
+					<div><div class="services-slider__img-wrapp"><img class="greyscale" src="img/img-5.png" alt="" width="132" height="92"></div></div>
+					<div class="services-slider__text">СБЕРБАНК<br>России</div>
 				</div>
 			</div>
 		</div>
@@ -291,8 +292,8 @@
 					<div class="logo__txt logo__txt_margin_30 logo__txt_width_footer">Эвакуация автомобилей и техническая помощь в Архангельске и Архангельской области</div>
 				</div>
 				<div class="linkbar">
-					<a class="linkbar__link" href="#" target="_blank">Разработка сайта — Отдел-X</a><br>
-					<a class="linkbar__link" href="#" target="_blank">Политика конфиденциальности</a>
+					<a class="linkbar__link" href="https://vk.com/otdel_iks" target="_blank">Разработка сайта — Отдел-X</a><br>
+					<a class="linkbar__link modal-form" href="#politic">Политика конфиденциальности</a>
 				</div>
 				<div class="contacts">
 					<div>
@@ -309,16 +310,50 @@
 		<div class="form-wrapp form-wrapp_popup">
 			<div class="form-wrapp__title form-wrapp__title_border center">Оставьте свой номер<br> и мы вам перезвоним</div>
 			<form class="form" method="post" id="feedback-valid-4" action="sendmail.php">
+				<input type="hidden" name="hideinput" class="val-from-btn" value="">
 				<input class="form__input" type="tel" name="phone" placeholder="Введите ваш номер*"> 
 				<button class="button mt20" type="submit">Заказать звонок</button>
 			</form>
 		</div>
 	</div>
 
+	<div id="politic" class="hide-b">
+		<h2>Политика обработки персональных данных </h2>
+
+
+		<p>Политика в отношении обработки персональных данных определяет основные принципы и правила по обработке персональных данных, которыми мы руководствуемся в нашей работе, а также в общении с клиентами, поставщиками и сотрудниками. Политика в отношении обработки персональных данных распространяется на всех наших сотрудников. При обработке персональных данных мы стремимся соблюдать требования законодательства Российской Федерации, в частности Федеральный закон № 152-ФЗ «О персональных данных», а также нормы и правила, установленные в нашей компании. </p>
+
+
+		<h3>С какой целью собираются эти данные</h3>
+
+
+		<p>Имя используется для обращения лично к вам, а ваш e-mail для отправки вам писем рассылок, новостей тренинга, полезных материалов, коммерческих предложений. Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме.</p>
+
+
+		<h3>Как эти данные используются</h3>
+
+
+		<p>На сайте используются куки (Cookies) и данные о посетителях сервиса Google Analytics и Яндекс Метрика. При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей. Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом.</p>
+
+
+		<h3>Как эти данные защищаются</h3>
+
+
+		<p>Для защиты Вашей личной информации мы используем разнообразные административные, управленческие и технические меры безопасности. Наша Компания придерживается различных международных стандартов контроля, направленных на операции с личной информацией, которые включают определенные меры контроля по защите информации, собранной в Интернет. Наших сотрудников обучают понимать и выполнять эти меры контроля, они ознакомлены с нашим Уведомлением о конфиденциальности, нормами и инструкциями.</p>
+
+
+		<p>Тем не менее, несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее. Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем.</p>
+
+
+		<p>Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций.</p>
+
+		<p>Для связи с администратором сайта по любым вопросам вы можете написать письмо на e-mail: <a href="mailto:info@site.ru">info@site.ru</a></p>
+
+	</div>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.min.js"></script>
-
 </body>
 </html>
