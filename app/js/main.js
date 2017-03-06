@@ -21,7 +21,7 @@ $(document).ready(function(){
       if (fl) {
         fl = false;
         fl2 = true;
-        $('.footer').find('.contacts').after($('.linkbar'));
+        // $('.footer').find('.contacts').after($('.linkbar'));
       }
 
     }
